@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+
+<link href="swiper/idangerous.swiper.css" rel="stylesheet" />
+<link href="swiper/idangerous.swiper.scrollbar.css" rel="stylesheet" />
+
+<style type="text/css">
+.scrollContainer
+{
+	width: 600px;
+	height: 400px;
+	background-color: gray;
+}
+
+.hScroll-swiper-container
+{
+	height: 100%;
+	width: 100%;
+}
+
+.swiper-slide
+{
+	width: inherit;
+	height: 100px;
+}
+
+
+.pgmGrig
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: pink;
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+<div class="scrollContainer">
+	<div class="swiper-container hScroll-swiper-container">
+		<div class="swiper-wrapper">
+			 <div class="swiper-slide setwidth">
+					<div class="pgmGrig">pgrm -1</div>
+					<div class="pgmGrig">pgrm -2</div>
+					<div class="pgmGrig">pgrm -3</div>
+					<div class="pgmGrig">pgrm -4</div>
+					<div class="pgmGrig">pgrm -5</div>
+					<div class="pgmGrig">pgrm -6</div>
+					<div class="pgmGrig">pgrm -7</div>
+					<div class="pgmGrig">pgrm -8</div>
+					<div class="pgmGrig">pgrm -9</div>
+					<div class="pgmGrig">pgrm -10</div>
+					<div class="pgmGrig">pgrm -11</div>
+					<div class="pgmGrig">pgrm -12</div>
+			 </div>
+		</div>
+	</div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="swiper/idangerous.swiper.min.js"></script>
+<script src="swiper/idangerous.swiper.scrollbar-2.0.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(e)
+{
+
+	$(".hScroll-swiper-container").swiper({
+		slidesPerView :'auto',
+		loop : false,
+		slidesPerViewFit  : false,
+		roundLengths  : 'false'
+	});
+});
+</script>
+
+</body>
+</html>
